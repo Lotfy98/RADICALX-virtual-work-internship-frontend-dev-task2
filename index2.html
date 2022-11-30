@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-compatible" content="ie=edge">
+        <!-- REACT LIBRARY -->
+        <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+        <!-- REACT DOM LIBRARY -->
+        <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+        <!-- BABEL LIBRARY -->
+        <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,700,800&family=Space+Mono&display=swap" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Open+Sans:wght@300,400,700,800&family=Space+Mono&display=swap" rel="stylesheet">
+        <title>Category</title>
+    </head>
+    <body>
+        <div id="app">React hasnot rendered yet!</div>
+
+            <script type="text/babel">
+                function Body() {
+                document.body.style.backgroundColor="#f0f0f5";
+				document.body.style.boxSizing="border-box";	
+				return(
+						<div>
+                            <Head/>
+                            <Head2/>
+                            <Searchdiv/>
+						</div>
+					);
+
+                    function Searchdiv() {
+
+                        var searchDiv={
+                            position:"absolute",
+                            top:"131px",
+                            left:"545px",
+                            height:"262px",
+                            width:"950px",
+                            backgroundColor:"#ffffff",
+                            border:"none",
+                            fontFamily:"Space Mono, monospace",
+                            borderRadius:"10px",
+                            boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+                        }
+
+                        var inputStyle={
+                            backgroundColor:"#f1f1f1",
+                            width:"90%",
+                            height:"17%",
+                            borderRadius:"10px",
+                            position:"absolute",
+                            top:"80px",
+                            left:"20px",
+                            border:"none"
+                        }
+
+                        var hStyle={
+                            fontFamily:"Space Mono, monospace",
+                            fontWeight:800,
+                            fontSize:"24px",
+                            margin:"20px"
+                        }
+
+                        var btnStyle={
+                            border:"none"
+                        }
+
+                        return(
+                            <div style={searchDiv}>
+                                <h1 style={hStyle}>Category</h1>
+                                <input style={inputStyle} type="text" name="search" placeholder="Search Category"></input>
+                                <button style={btnStyle}></button>
+                            </div>
+                        );
+                    }
+
+                    function Head2() {
+                        var head2Style={
+                            position:"absolute",
+                            top:"60px",
+                            left:"11px",
+                            border:"1px solid #cccccc",
+                            borderRadius:"10px",
+                            width:"1488px",
+                            height:"38px"
+                        }
+
+                        var intern1Style={
+                            fontSize:"15px",
+                            border:"none",
+                            borderRadius:"10px",
+                            padding:"3px",
+                            display:"inline-block",
+                            margin:"5px 180px 5px 15px",
+                            fontFamily:"Space Mono, monospace",
+                            fontWeight:800
+                        }
+
+                        var intern2Style={
+                            fontSize:"15px",
+                            border:"none",
+                            borderRadius:"10px",
+                            padding:"3px",
+                            display:"inline-block",
+                            margin:"5px 180px 5px 15px",
+                            fontFamily:"Space Mono, monospace",
+                            fontWeight:800,
+                            cursor:"not-allowed",
+                            color:"#cccccc"
+
+                        }
+
+                        var intern3Style={
+                            fontSize:"15px",
+                            border:"none",
+                            borderRadius:"10px",
+                            padding:"3px",
+                            display:"inline-block",
+                            margin:"5px 180px 5px 15px",
+                            fontFamily:"Space Mono, monospace",
+                            fontWeight:800,
+                            cursor:"not-allowed",
+                            color:"#cccccc"
+                        }
+
+                        var intern4Style={
+                            fontSize:"15px",
+                            border:"none",
+                            borderRadius:"10px",
+                            padding:"3px",
+                            display:"inline-block",
+                            margin:"5px 180px 5px 15px",
+                            fontFamily:"Space Mono, monospace",
+                            fontWeight:800,
+                            cursor:"not-allowed",
+                            color:"#cccccc"
+                        }
+                        
+
+                        var iconStyle={
+                            fontWeight:800,
+                            color:"#00000",
+                            fontSize:"24px",
+                            verticalAlign:"middle",
+                            border:"none",
+                            marginRight:"5px",
+                            marginTop:"-3px"
+                        }
+
+                        
+                        var icon2Style={
+                            fontWeight:800,
+                            color:"#000000",
+                            fontSize:"24px",
+                            verticalAlign:"middle",
+                            border:"none",
+                            margin:"13px"
+                            
+                        }
+
+                        var icon3Style={
+                            fontWeight:800,
+                            color:"#000000",
+                            fontSize:"24px",
+                            verticalAlign:"middle",
+                            border:"none",
+                            position:"absolute",
+                            top:"13px",
+                            left:"470px"
+                            
+                        }
+                        
+                        var categoryDiv={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"70px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px",
+                            boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+
+                        }
+
+                        var descriptionDiv={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"140px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+                        var locationDiv={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"210px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+                        var benefitsDiv={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"280px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px",
+                            wordSpacing:"2px"
+                        }
+
+                        var introStyle={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"350px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+                        var mentorStyle={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"420px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+                        var recommendedStyle={                            
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"490px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+
+                        var webStyle={
+                            fontSize:"20px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"560px",
+                            left:"5px",
+                            border:"none",
+                            backgroundColor:"#ffff",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                        }
+
+                        var addStyle={
+                            fontSize:"18px",
+                            fontFamily:"Space Mono, monospace",
+                            position:"absolute",
+                            top:"630px",
+                            left:"5px",
+                            border:"dashed 3.2px #9900ff",
+                            backgroundColor:"#f0f0f5",
+                            width:"500px",
+                            height:"50px",
+                            borderRadius:"10px"
+                            
+                        }
+
+                        var linksStyle={
+                            textDecoration:"none",
+                            color:"#000000"
+                        }
+
+                        var links1Style={
+                            textDecoration:"none",
+                            color:"#9900ff",
+                            position:"absolute",
+                            top:"10px",
+                            left:"185px",
+                            fontWeight:600
+                            
+                        }
+
+                        return(
+                            <div style={head2Style}>
+                                <button style={intern1Style}><ion-icon style={iconStyle} name="remove-circle-outline"></ion-icon>Internship Desicription</button>
+                                <button style={intern2Style}><ion-icon style={iconStyle} name="remove-circle-outline"></ion-icon>Internship Guide</button>
+                                <button style={intern3Style}><ion-icon style={iconStyle} name="remove-circle-outline"></ion-icon>Surveys</button>
+                                <button style={intern4Style}><ion-icon style={iconStyle} name="remove-circle-outline"></ion-icon>Settings</button>
+                                <div style={categoryDiv}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="index2.html" style={linksStyle}>Category</a><a href="index2.html"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={descriptionDiv}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="index3.html"style={linksStyle}>Description</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={locationDiv}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Location</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={benefitsDiv}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Benefits</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={introStyle}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Intro Videos</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={mentorStyle}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Mentor Details</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={recommendedStyle}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Recommended Roles</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={webStyle}><ion-icon style={icon2Style} name="menu-outline"></ion-icon><a href="#" style={linksStyle}>Web Links & Resources</a><a href="#"><ion-icon style={icon3Style} name="caret-forward-outline"></ion-icon></a></div>
+                                <div style={addStyle}><a href="#" style={links1Style}><ion-icon style={iconStyle} name="duplicate-outline"></ion-icon>ADD MORE</a></div>    
+                            </div>
+                        );
+                    }
+                    
+                    function Head() {
+                        var headStyle={
+                            display:"block",
+                            backgroundColor:"#ffffff",
+                            margin:"5px",
+                            borderRadius:"10px",
+                            height:"40px",
+                            width:"1488px"
+
+
+                        }
+
+                        var backButton={
+                            fontSize:"18px",
+                            margin:"2px",
+                            marginRight:"100px",
+                            border:"none",
+                            backgroundColor:"#ffffff",
+                            fontWeight:400,
+                            fontFamily:"Open Sans, sans-serif",
+                            padding:"2px"
+
+                        }
+
+                        var headingStyle={
+                            fontSize:"24px",
+                            margin:"5px 420px",
+                            fontWeight:800,
+                            fontFamily:"Open Sans, sans-serif"
+
+                        }
+
+                        var continueButton={
+                            border:"none",
+                            borderRadius:"10px",
+                            padding:"5px",
+                            cursor:"not-allowed",
+                            fontWeight:400,
+                            backgroundColor:"#f2f2f2",
+                            fontSize:"18px",
+                            color:"#cccccc",
+                            fontWeight:700
+
+
+                        }
+
+                        var icon1Style={
+                            fontWeight:700,
+                            color:"#9900ff",
+                            fontSize:"24px",
+                            verticalAlign:"middle",
+                            border:"none",
+                            marginRight:"8px",
+                            marginTop:"-2px"
+                        }
+
+                        var icon2Style={
+                            fontWeight:700,
+                            color:"#cccccc",
+                            fontSize:"24px",
+                            verticalAlign:"middle",
+                            border:"none",
+                            marginTop:"-1px"
+                        }
+                        return(
+                            <div style={headStyle}>
+                                <button href="index.html" style={backButton}><ion-icon style={icon1Style} name="arrow-back-outline"></ion-icon>Back</button>
+                                <heading style={headingStyle}>Add New Internship</heading>
+                                <button style={continueButton}>Continue To Next Step<ion-icon style={icon2Style} name="arrow-forward-outline"></ion-icon></button>    
+                                
+                            </div>
+                        );
+                    }
+
+					}
+                    ReactDOM.render(
+                        <Body/>,
+                         document.getElementById("app")
+                    );
+            </script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+    
+</html>
